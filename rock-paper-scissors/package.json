@@ -1,0 +1,23 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "random-int": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliihaiderr/Rock-Paper-Scissors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aliihaiderr/Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/aliihaiderr/Rock-Paper-Scissors#readme",
+  "description": ""
+}
