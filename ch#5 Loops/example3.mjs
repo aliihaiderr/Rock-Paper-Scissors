@@ -1,0 +1,44 @@
+let groups = [
+    ["Martin", "Daniel", "Keith"],
+    ["Margot", "Marina", "Ali"],
+    ["Helen", "Jonah", "Sambikos"],
+   ];
+
+//    for (let i = 0; i < groups.length; i++) {
+//     let matches = 0;
+//    for (let j = 0; j < groups[i].length; j++) {
+//     if(groups[i][j].startsWith("M")){
+//     matches++;
+//     } else {
+//     continue;
+//     }
+//     if (matches === 2){
+//     console.log("Found a group with two names starting with an M:");
+//     console.log(groups[i]);
+//     break;
+//     }
+//     }
+//    }
+   
+
+//    for (let group of groups){
+//     for (let member of group){
+//     if (member.startsWith("M")){
+//     console.log("found one starting with M:", member);
+//     break;
+//     }
+//     }
+//    }
+
+
+//Label loops
+outer:
+for (let group of groups) {
+ inner:
+ for (let member of group) {
+ if (member.startsWith("M")) {
+ console.log("found one starting with M:", member);
+ break outer;
+ }
+ }
+}
