@@ -68,14 +68,14 @@
 //    doOuterFunctionStuff(2);
    
    // inner variable not accessed by outer function
-//    function doOuterFunctionStuff(nr) {
-//     doInnerFunctionStuff(nr);
-//     function doInnerFunctionStuff(x) {
-//     let z = 10;
-//     }
-//     console.log("Not accessible:", z);
-//    }
-//    doOuterFunctionStuff(2);
+   function doOuterFunctionStuff(nr) {
+    doInnerFunctionStuff(nr);
+    function doInnerFunctionStuff(x) {
+    let z = 10;
+    }
+    console.log("Not accessible:", z);
+   }
+   doOuterFunctionStuff(2);
    
     // function doOuterFunctionStuff(nr) {
     //     doInnerFunctionStuff(nr);
@@ -109,8 +109,8 @@
 
 
    // self check quiz
-   var addFive1 = function addFive1(num) {
-    return num + 2;
-    };
-    let addFive2 = (num) => num + 2;
-    console.log(addFive2(14));
+   // var addFive1 = function addFive1(num) {
+   //  return num + 2;
+   //  };
+   //  let addFive2 = (num) => num + 2;
+   //  console.log(addFive2(14));
