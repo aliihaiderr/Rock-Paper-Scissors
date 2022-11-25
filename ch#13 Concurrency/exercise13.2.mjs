@@ -3,7 +3,12 @@ in sequence using Promises. */
 
 let promise= new Promise((resolve, reject) => {
     resolve("Start Counting");
-}).then((val)=>{
+})
+let counter=(val)=>{
+    console.log(val);
+}
+promise
+.then((val)=>{
     counter(val);
     return "one";
 }).then((val)=>{
@@ -15,6 +20,3 @@ let promise= new Promise((resolve, reject) => {
 }).then((val)=>{
     counter(val);
 })
-let counter=(val)=>{
-    console.log(val);
-}

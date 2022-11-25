@@ -13,4 +13,4 @@ function greetings(username,callback){
     callback(fullName);
 }
     //Invoke the process of the callback function.
-greetings("Ali Faisal",greet);
+greetings("Ali Haider",greet);
