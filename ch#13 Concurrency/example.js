@@ -70,27 +70,28 @@
 //   console.log("Error",error);
 // })
 
-
 //Chain Promise
 
-let promise =new Promise((resolve, reject) => {
-    resolve("success");
-    // reject("Error");
-}).then((val)=>{                          // .then is also a promise
+let promise = new Promise((resolve, reject) => {
+  resolve("success");
+  // reject("Error");
+})
+  .then((val) => {
+    // .then is also a promise
     console.log(val);
     return "Welcome";
-}).then((val)=>{                              
+  })
+  .then((val) => {
     console.log(val);
     return "to";
-}).then((val)=>{
-  console.log(val);
-  return "javaScript"
-}).then(val=>{
-  console.log(val);
-})
-.catch((error)=>{
-    console.log("This is in Catch",error);
-})
-
-
-
+  })
+  .then((val) => {
+    console.log(val);
+    return "javaScript";
+  })
+  .then((val) => {
+    console.log(val);
+  })
+  .catch((error) => {
+    console.log("This is in Catch", error);
+  });

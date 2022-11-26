@@ -1,22 +1,25 @@
 /*  In this exercise, you will create a counter that will output the values
 in sequence using Promises. */
 
-let promise= new Promise((resolve, reject) => {
-    resolve("Start Counting");
-})
-let counter=(val)=>{
-    console.log(val);
-}
+let promise = new Promise((resolve, reject) => {
+  resolve("Start Counting");
+});
+let counter = (val) => {
+  console.log(val);
+};
 promise
-.then((val)=>{
+  .then((val) => {
     counter(val);
     return "one";
-}).then((val)=>{
+  })
+  .then((val) => {
     counter(val);
     return "two";
-}).then((val)=>{
+  })
+  .then((val) => {
     counter(val);
     return "three";
-}).then((val)=>{
+  })
+  .then((val) => {
     counter(val);
-})
+  });

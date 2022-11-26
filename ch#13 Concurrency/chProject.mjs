@@ -31,4 +31,3 @@ function checker(pass) {
 checker("haider");
 checker("ali");
 checker("latitude6430");
-
