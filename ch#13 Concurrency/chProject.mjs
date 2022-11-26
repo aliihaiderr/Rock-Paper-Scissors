@@ -3,7 +3,7 @@ function passChecker(pass) {
   return password.includes(pass);
 }
 
-function login() {
+function login(val) {
   return new Promise((resolve, reject) => {
     if (passChecker(password)) {
       resolve({
@@ -29,4 +29,6 @@ function checker(pass) {
 }
 
 checker("haider");
+checker("ali");
+checker("latitude6430");
 
